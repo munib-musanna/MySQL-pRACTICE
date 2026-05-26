@@ -1,0 +1,24 @@
+The MySQL SELECT Statement
+The SELECT statement is used to select data from a database.
+The data returned is stored in a result table, called the result-set.
+The following SQL selects the "CustomerName", "City", and "Country" columns from the "Customers" table:
+
+Example: 
+SELECT CustomerName, City, Country FROM Customers;
+
+SELECT Syntax
+SELECT column1, column2, ...
+FROM table_name;
+
+Here, column1, column2, ... are the column names in the table you want to select data from.
+The table_name represents the name of the table you want to select data from.
+To select all columns, without specifying every column name, use the following syntax:
+SELECT * FROM table_name;
+
+SELECT ALL Columns
+To select ALL columns, without specifying every column name, use the SELECT * syntax:
+The following SQL selects ALL the columns from the "Customers" table:
+
+Example
+SELECT * FROM Customers;
+
