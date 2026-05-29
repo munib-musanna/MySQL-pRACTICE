@@ -1,0 +1,28 @@
+The MySQL SELECT DISTINCT Statement
+The SELECT DISTINCT statement is used to return only distinct (unique) values.
+
+In a table, a column may contain several duplicate values - and sometimes you want to list only the unique values.
+
+The following SQL selects all the distinct (unique) country values from the "Customers" table:
+
+Example
+SELECT DISTINCT Country FROM Customers;
+
+SELECT DISTINCT Syntax
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+SELECT Example Without DISTINCT
+If you omit the DISTINCT keyword, the SQL statement returns all the "Country" values from all the records of the "Customers" table:
+
+Example
+SELECT Country FROM Customers;
+
+
+Count Distinct Values
+By using the COUNT() function with the DISTINCT keyword, we can count the number of unique values.
+
+The following SQL counts the number of unique countries in the "Customers" table:
+
+Example
+SELECT COUNT(DISTINCT Country) FROM Customers;
