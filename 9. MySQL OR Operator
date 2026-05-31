@@ -1,0 +1,44 @@
+The MySQL OR Operator
+The WHERE clause can contain one or more OR operators.
+
+The OR operator is used to filter records based on more than one condition.
+
+Note: The OR operator displays a record if any of the conditions are TRUE.
+
+The following SQL selects all customers where city is "Berlin" OR "Stuttgart":
+
+Example
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR City = 'Stuttgart';
+
+
+The following SQL selects all customers where country is "Germany" OR "Spain":
+
+Example
+SELECT * FROM Customers
+WHERE Country = 'Germany' OR Country = 'Spain';
+
+
+OR Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+
+
+AND vs. OR
+The AND operator displays a record if all the conditions are TRUE.
+
+The OR operator displays a record if any of the conditions are TRUE.
+
+
+
+Combining AND and OR
+You can also combine the AND and OR operators.
+
+The following SQL selects all customers where country is "Germany" AND city must be "Berlin" OR "Stuttgart" (use parenthesis to form complex expressions):
+
+Example
+SELECT * FROM Customers
+WHERE Country = 'Germany' AND (City = 'Berlin' OR City = 'Stuttgart');
+
+
