@@ -1,0 +1,27 @@
+MySQL MAX() Function
+The MAX() function returns the largest value of the selected column.
+
+The MAX() function works with numeric, string, and date data types. 
+
+MAX() Syntax
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+
+MAX() Example
+The following SQL returns the highest price in the Price column, in the "Products" table:
+
+Example 
+SELECT MAX(Price) AS LargestPrice
+FROM Products;
+
+
+Use MAX() with Date Column
+The following SQL returns the latest BirthDate in the BirthDate column, in the "Employees" table:
+
+Example
+SELECT MAX(BirthDate) AS LatestBirthdate
+FROM Employees;
+
+
