@@ -1,0 +1,27 @@
+MySQL MIN() Function
+The MIN() function returns the smallest value of the selected column.
+
+The MIN() function works with numeric, string, and date data types. 
+
+MIN() Syntax
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+
+MIN() Example
+The following SQL returns the lowest price in the Price column, in the "Products" table:
+
+Example
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+
+Tip: When using MIN(), the returned column will not have a name. Use the AS keyword to give the column a descriptive name.
+
+Use MIN() with Date Column
+The following SQL returns the earliest BirthDate in the BirthDate column, in the "Employees" table:
+
+Example
+SELECT MIN(BirthDate) AS EarliestBirthdate
+FROM Employees;
